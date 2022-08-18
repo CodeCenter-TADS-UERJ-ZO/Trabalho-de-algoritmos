@@ -1,0 +1,24 @@
+
+    //visando O usuário deverá entrar com a sua receita líquida e o programa deverá  calcular os gastos dos itens pré-definidos abaixo
+  sal, aluguel, custoCasa, invest, cusTotal, valorSob: real
+    //Ao final o programa deverá informar o quanto foi reservado parcada item e o valor que sobrou que poderá ser utilizado nas demais despesas não abordadas. 
+      inicio
+      escreva("Insira seu salário..:")
+        leia("%f", &sal)
+        escreva("Quanto custa seu alúguel?..:")
+        leia("%f", &aluguel)
+        escreva("Quanto valem as despesas da casa?")
+        leia("%f", &custoCasa)
+        escreva("O quanto você investe mensalmente?")
+        leia("%f", &invest)
+        // processamento de dados
+        aluguel<-sal*0.3
+        custoCasa=sal*0.3
+        invest<-sal*0.08
+        cusTotal<-aluguel+custoCasa+invest
+        valorSob<-sal-cusTotal
+        //output
+        escreva("O valor reservado para o aluguel é de %f, para as despesas é %f e para investimentos é %f. O salário restante é %f.", aluguel, custoCasa, invest, valorSob)
+    
+  fimalgoritmo
+}
