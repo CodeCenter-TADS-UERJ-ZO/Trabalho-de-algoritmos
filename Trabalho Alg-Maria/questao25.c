@@ -28,5 +28,4 @@ else if(bonus>=600 && bonus>1200){
 else if(bonus<600){
     printf("Bonus é de R$ 100,00");
 }
-
 }
