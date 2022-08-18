@@ -1,0 +1,54 @@
+Var
+// Var declar
+codigo : inteiro
+ preco : real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+  escreval("Qual é o preço do produto..:")
+  leia(preco)
+   escreval("******************************")
+   escreval("************ATENÇÃO***********")
+   escreval("******************************")
+   escreval("Código de origem deve ser de entre 1 a 30")
+   escreval ("Digite o código de origem: ")
+  leia(codigo)
+  
+se codigo = 1   entao
+
+    escreval ("Origem: Sul")
+               fimse
+se codigo = 2   entao
+     escreval ("Origem: Norte"
+             fimse
+
+se codigo = 3 entao
+     escreval ("Origem: Leste")
+
+             fimse
+   se codigo = 4  entao
+     escreval ("Origem: Oeste")
+               fimse
+
+   se (codigo = 5) ou (codigo = 6)   entao
+     escreval ("Origem: Nordeste")
+     fimse
+
+
+    se (codigo = 7) ou (codigo = 8) ou (codigo = 9)entao
+     escreval ("Procedência: Sudeste")
+
+          fimse
+    se (codigo>= 10) e (codigo<=20)  entao
+     escreval ("Procedência: Centro-Oeste")
+             fimse
+se (codigo>= 21) e (codigo<=30) entao
+     escreval ("Origem: Nordeste")
+              fimse
+
+  se codigo > 30 entao
+     escreval ("Origem nao encontrada!")
+ fimse
+   escreval("O valor do produto é..: R$", preco)
+}
+fimalgoritmo
