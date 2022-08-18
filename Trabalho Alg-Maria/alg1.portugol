@@ -1,0 +1,24 @@
+
+Algoritmo "Exercício 1"
+
+Var
+euroDia, compra:real
+pontos: inteiro
+Inicio
+
+
+
+escreva("Bem vindo ao Sistema de Pontos...:")
+escreva("Por favor, insira o valor atual do euro...:")
+escreval("Qual a cotação do euro hoje ..:")
+leia(euro)
+escreval("Qual o valor da compra ..:")
+leia(compra)
+
+pontos <- valorCompra / euroDia
+
+escreval("Seu número de pontos é  ",pontos:2)
+}
+
+
+Fimalgoritmo
