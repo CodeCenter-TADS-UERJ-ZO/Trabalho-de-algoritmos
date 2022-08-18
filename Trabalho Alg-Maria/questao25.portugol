@@ -1,0 +1,29 @@
+inicio
+horasEx, horasFal: inteiro
+ bonus, min: real
+
+escreva("Insira o número de horas trabalhadas além do expediente normal..:\n")
+leia("%d",&horasEx)
+escreva("Insira número de horas m que o funcionário esteve ausente..:\n")
+leia("%d",&horasFal)
+//calculo
+bonus= horasEx-(2/3*(horasFal));
+min = bonus * 60;
+
+//processamento condicional
+se(bonus>2400){
+    escreval("Bonus é de R$ 500,00")
+fimse
+se(bonus>=1800) ou (bonus<2400) entao
+    escreval"Bonus é de R$ 400,00")
+fimse
+se(bonus>=1200) ou (bonus>1800) entao
+    escreval("Bonus é de R$ 300,00")
+fimse
+se(bonus>=600) ou (bonus>1200) entao
+    escreval("Bonus é de R$ 200,00")
+fimse
+se(bonus<600)
+    escreval("Bonus é de R$ 100,00")
+fimse
+fimalgoritmo
