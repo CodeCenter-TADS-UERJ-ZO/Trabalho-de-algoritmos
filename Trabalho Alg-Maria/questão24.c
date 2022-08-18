@@ -103,5 +103,7 @@ scanf("%d", &refri);
      printf("O preço do produto é: %.2f\n",aumento);
      printf("Alto");
  }
+ 
+ return=0;
 }
 
