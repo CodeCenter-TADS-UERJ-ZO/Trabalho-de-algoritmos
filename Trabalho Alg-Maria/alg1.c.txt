@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    // var declar
+    float euro, compra;
+    int pontos;
+    //input
+    printf("Bem vindo ao Sistema de Pontos...:");
+    printf("Por favor, insira o valor atual do euro...:");
+    scanf("%f", &euro);
+    printf("Por favor, insira o valor da compra...:");
+    scanf("%f", &compra);
+    //process
+    pontos= compra/euro; 
+    //output
+    printf("Seu número de pontos é %i", pontos);
+    
+    return 0;
+}
