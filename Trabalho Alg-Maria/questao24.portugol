@@ -1,0 +1,81 @@
+// Seção de Declarações das variáveis 
+categoria, refri : inteiro
+preco, aumento : real
+
+Inicio
+
+
+escreval("Qual é o preço ..:")
+leia(preco)
+
+escreval("**************************")
+escreval("********CATEGORIAS********")
+escreval("**************************")
+escreval("1 - Limpeza")
+escreval("2 - Alimentação")
+escreval("3 - Vestuário")
+escreval("Qual é a categoria ..:")
+leia(categoria)
+
+
+escreval("****************************")
+escreval("********REFRIGERAÇÃO********")
+escreval("****************************")
+escreval("1 - Produtos que necessitam de refrigeração")
+escreval("2 - Produtos que não necessitam de refrigeração")
+escreval("Qual é a situação ..:")
+leia(refri)
+
+
+
+
+     se (preco <= 25) e (categoria = 1)      entao
+         aumento <- preco+(preco*0.05)
+                    fimse
+     se (preco <= 25) e (categoria = 2) entao
+         aumento <- preco+(preco*0.08)
+                      fimse
+     se (preco <= 25) e (categoria = 3) entao
+         aumento <- preco+(preco*0.10)
+             fimse
+
+
+
+     se (preco > 25) e (categoria = 1)entao
+         aumento <- preco+(preco*0.12)
+          fimse
+
+     se (preco > 25) e (categoria = 2)entao
+         aumento <- preco+(preco*0.15)
+          fimse
+     se (preco > 25) e (categoria = 3)entao
+         aumento <- preco+(preco*0.18)
+             fimse
+
+
+ se (categoria = 2) e (refri = 1) entao
+     aumento <- aumento-(preco*0.05)
+                    fimse
+     se (categoria <> 2) e (refri <> 1) entao
+          aumento = aumento-(preco*0.08)
+                    fimse
+                    
+
+
+
+ se (aumento <= 50)      entao
+     escreval("O preço do produto é: ",aumento)
+     escreval("Baixo")
+     fimse
+
+  se (aumento > 50) e (aumento <120)   entao
+    escreval("O preço do produto é: ",aumento)
+     escreval("Médio")
+             fimse
+  se (aumento >= 120)entao
+     escreval("O preço do produto é: ",aumento)
+     escreval("Alto")
+             fimse
+
+
+Fimalgoritmo
