@@ -13,12 +13,16 @@
         leia("%f", &invest)
         // processamento de dados
         aluguel<-sal*0.3
-        custoCasa=sal*0.3
+        custoCasa<-sal*0.3
         invest<-sal*0.08
         cusTotal<-aluguel+custoCasa+invest
         valorSob<-sal-cusTotal
         //output
-        escreva("O valor reservado para o aluguel é de %f, para as despesas é %f e para investimentos é %f. O salário restante é %f.", aluguel, custoCasa, invest, valorSob)
+        escreva("O valor reservado para o aluguel é de", aluguel)
+        escreva("para as despesas é", custoCasa )
+        escreva("e para investimentos é", invest)
+        escreva("O salário restante é", valorSob)
+        
     
   fimalgoritmo
 }
