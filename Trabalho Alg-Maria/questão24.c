@@ -93,15 +93,15 @@ scanf("%d", &refri);
  
  if (aumento <= 50){
      printf("O preço do produto é: %.2f\n",aumento);
-     printf("Barato");
+     printf("Baixo");
  }
   if (aumento > 50 && aumento <120){
      printf("O preço do produto é: %.2f\n",aumento);
-     printf("Normal");
+     printf("Médio");
  }
   if (aumento >= 120){
      printf("O preço do produto é: %.2f\n",aumento);
-     printf("Caro");
+     printf("Alto");
  }
 }
-  // é o gabz
+
